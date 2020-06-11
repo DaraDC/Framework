@@ -19,7 +19,10 @@
 
     public function Servidor()
     {
-     echo "En clase Home y metodo servidor";
+    $modelo = new Usuarios();
+    $guardar = $modelo->Busqueda("Usuario",123);
+    var_dump($guardar);
+     //echo "En clase Home y metodo servidor";
 	}
 
   }
