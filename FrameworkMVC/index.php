@@ -10,7 +10,7 @@
     else
     {
       $controller="Home";
-      $action="Inicio";
+      $action="Servidor";
     }
 
     if(class_exists ($controller) && method_exists($controller,$action))
