@@ -20,7 +20,7 @@
     public function Servidor()
     {
     $modelo = new Usuarios();
-    $guardar = $modelo->Busqueda("Usuario",123);
+    $guardar = $modelo->Busqueda("usuario",123);
     var_dump($guardar);
      //echo "En clase Home y metodo servidor";
 	}

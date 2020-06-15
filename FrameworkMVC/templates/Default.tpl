@@ -1,7 +1,7 @@
 
   {include file = "Cabecera/Header.tpl"}
-   
-<form class="form-signin" align="center" method="post">
+ 
+ <form class="form-signin" align="center" method="post">
   <img class="mb-4" src="login.jpg" alt="" width="72" height="72">
   <h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
   <label for="inputEmail" class="sr-only">Username</label>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-06-11 07:36:27
+/* Smarty version 3.1.34-dev-7, created on 2020-06-15 03:13:37
   from 'C:\xampp\htdocs\DaraC\Framework\FrameworkMVC\templates\default.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5ee1c2db986b00_44556947',
+  'unifunc' => 'content_5ee6cb41f3afa0_74026977',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5537475a6f47fae895ff636cbab74109a7f0d78b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\DaraC\\Framework\\FrameworkMVC\\templates\\default.tpl',
-      1 => 1591853784,
+      1 => 1592183616,
       2 => 'file',
     ),
   ),
@@ -22,12 +22,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:Cabecera/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_5ee1c2db986b00_44556947 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ee6cb41f3afa0_74026977 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <?php $_smarty_tpl->_subTemplateRender("file:Cabecera/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-   
-<form class="form-signin" align="center" method="post">
+ 
+ <form class="form-signin" align="center" method="post">
   <img class="mb-4" src="login.jpg" alt="" width="72" height="72">
   <h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
   <label for="inputEmail" class="sr-only">Username</label>
