@@ -7,8 +7,9 @@
      
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="Login.css">
+  
     <link rel="stylesheet" href="./Framework/Bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./FrameworkMVC/templates/Cabecera/diseño.css">
     <title>Login</title>
   </head>
   <body style="background-color:lightyellow">
