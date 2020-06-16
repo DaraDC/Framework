@@ -18,11 +18,6 @@
   <path d="M7.411 8.034a.5.5 0 0 1 .493-.417h.156a.5.5 0 0 1 .492.414l.347 2a.5.5 0 0 1-.493.585h-.835a.5.5 0 0 1-.493-.582l.333-2z"/>
 </svg>
   <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="contra"><br>
-   <label for="inputPuesto" class="sr-only">Puesto de trabajo</label>
-   <svg class="bi bi-bag-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
-</svg>
-<input  type="text" id="inputuser" class="form-control" placeholder="Puesto de trabajo" required autofocus name="puesto">
   <div class="checkbox mb-3">
     <label>
       <input type="checkbox" value="remember-me"> Remember me
