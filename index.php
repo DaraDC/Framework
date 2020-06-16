@@ -1,5 +1,6 @@
 <?php
-    
+
+    //include('Controlador/Home.Controller.php');
     include('AutoLoad.php');
 
     if(isset($_GET['controller']))

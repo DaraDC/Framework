@@ -22,7 +22,7 @@
     $modelo = new Usuarios();
     $guardar = $modelo->Busqueda("usuario",123);
     var_dump($guardar);
-     //echo "En clase Home y metodo servidor";
+    //echo "En clase Home y metodo servidor";
 	}
 
   }
