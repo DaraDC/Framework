@@ -13,3 +13,9 @@
     <title>Login</title>
   </head>
   <body style="background-color:#F3E6D1;">
+  <div>
+<header>
+<div>
+<h1 class="log" align="center">LOGIN</h1>
+</div>
+</header>
