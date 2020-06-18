@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-06-16 04:30:22
+/* Smarty version 3.1.34-dev-7, created on 2020-06-18 20:08:44
   from 'C:\xampp\htdocs\DaraC\Framework\FrameworkMVC\templates\Cabecera\Header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5ee82ebea3eba9_68244443',
+  'unifunc' => 'content_5eebadac357481_93405433',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd66d6ea3d8018a7459b9cde273022f8e6beabe4a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\DaraC\\Framework\\FrameworkMVC\\templates\\Cabecera\\Header.tpl',
-      1 => 1592274620,
+      1 => 1592503722,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ee82ebea3eba9_68244443 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5eebadac357481_93405433 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="es">
   <head>
@@ -35,5 +35,5 @@ function content_5ee82ebea3eba9_68244443 (Smarty_Internal_Template $_smarty_tpl)
      <link rel="stylesheet" href="./Framework/Bootstrap/css/login.css">
     <title>Login</title>
   </head>
-  <body><?php }
+  <body style="background-color:#F3E6D1;"><?php }
 }

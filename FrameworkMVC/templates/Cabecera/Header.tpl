@@ -12,4 +12,4 @@
      <link rel="stylesheet" href="./Framework/Bootstrap/css/login.css">
     <title>Login</title>
   </head>
-  <body>
+  <body style="background-color:#F3E6D1;">
