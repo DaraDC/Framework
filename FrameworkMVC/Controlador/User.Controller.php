@@ -10,26 +10,25 @@ class User
 
        $usuario=$_POST['usuario'];
        $contra=$_POST['contra'];
-       $puesto=$_POST['puesto'];
+       $tipo=$_POST['tipo'];
 
-       $usuarios=$us->BuscarUsuario($usuario,$contra,$puesto);
+       $datos=$us->BuscarUsuario($usuario,$contra,$tipo);
 
-       if($usuarios->num_rows==1)
+       if($datos->num_rows==1)
        {
+        
         $ar=array();
 
-        while($row=mysqli_fetch_assoc($usuarios))
+        while($row=mysqli_fetch_assoc($datos))
         {
-           if($row['tipo'] == 'Administrador')
-           {
-           $smarty->display('Administrador.tpl');
-		   }
-           else if($row['tipo'] == 'Trabajador')
-           {
-           $smarty->display('Trabajador.tpl');
-		   }
+          $smarty->display('Admin.tpl');
         }
+
 	   }
+       else
+      {
+        $smarty->display('Default.tpl');
+      }
    }
 }
 

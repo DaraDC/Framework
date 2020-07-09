@@ -1,57 +1,47 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-07-06 03:10:11
+/* Smarty version 3.1.34-dev-7, created on 2020-07-09 05:40:04
   from 'C:\xampp\htdocs\DaraC\Framework\FrameworkMVC\templates\Default.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f0279f3bbf503_44380738',
+  'unifunc' => 'content_5f069194889b80_87248573',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ec5658664500794492fba8dafbc763321517c10c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\DaraC\\Framework\\FrameworkMVC\\templates\\Default.tpl',
-      1 => 1593997339,
+      1 => 1594264511,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:Cabecera/Header.tpl' => 1,
+    'file:Admin.tpl' => 1,
+    'file:Trabajador.tpl' => 1,
+    'file:inicio.tpl' => 1,
     'file:Cabecera/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_5f0279f3bbf503_44380738 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f069194889b80_87248573 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <?php $_smarty_tpl->_subTemplateRender("file:Cabecera/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
  
- 
-<div>
- <form align="center" method="post" action="?controller=User&action=BuscarUsuario">
-<svg class="bi bi-person-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
-  <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-  <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
-</svg><br>
-  <div class="form-group" align="center">
-    <label for="exampleInputtext">User</label>
-    <input class="sea2" type="text" class="form-control" name="usuario" id="exampleInputtext" aria-describedby="emailHelp">
-  </div>
-  <div class="form-group" align="center">
-    <label for="exampleInputPassword1">Password</label>
-    <input class="sea" type="password" class="form-control" name="contra" id="exampleInputPassword1">
-  </div>
-    <select class="form-control" name="puesto" id="exampleFormControlSelect1">
-      <option>Administrador</option>
-      <option>Trabajador</option>
-      <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label><br></br>
-     <button id="boton" type="submit" class="btn btn-primary">Entrar</button>
-  </div>
-</form>
+ <?php if (isset($_smarty_tpl->tpl_vars['usuario']->value)) {?>
+  <?php if ($_smarty_tpl->tpl_vars['tipo']->value == 'Administrador') {?>
+   <?php $_smarty_tpl->_subTemplateRender('file:Admin.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+  <?php } else { ?>
+   <?php $_smarty_tpl->_subTemplateRender('file:Trabajador.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+  <?php }?>
+ <?php } else { ?>
+ <?php $_smarty_tpl->_subTemplateRender('file:inicio.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+ <?php }?>
 
    <?php $_smarty_tpl->_subTemplateRender("file:Cabecera/Footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }
