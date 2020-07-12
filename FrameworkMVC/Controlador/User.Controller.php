@@ -5,6 +5,7 @@ class User
 
    public function BuscarUsuario()
    {
+       session_start();
        $us=new Usuarios();
        $smarty=new Smarty();
 
@@ -21,7 +22,13 @@ class User
 
         while($row=mysqli_fetch_assoc($datos))
         {
-          $smarty->display('Admin.tpl');
+         $_SESSION['usuario']=$row['usuario'];
+         $_SESSION['tipo']=$row['tipo'];
+
+         $smarty->assign('usuario',$_SESSION['usuario']);
+         $smarty->assign('tipo',$_SESSION['tipo']);
+         $smarty->display('Default.tpl');
+
         }
 
 	   }

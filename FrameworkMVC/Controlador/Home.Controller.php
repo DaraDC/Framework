@@ -14,7 +14,7 @@
     {
         //echo "En clase Home y metodo inicio";
         $smarty = new Smarty();
-        $smarty->display('Default.tpl');
+        $smarty->display('Admin.tpl');
     }
 
   }
