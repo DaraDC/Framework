@@ -8,10 +8,10 @@
     function __construct()
     {
       // code...
-      $server="localhost";
-      $pass="";
-      $user="root";
-      $base="framework";
+      $server="sql103.tonohost.com";
+      $pass="9snftg53";
+      $user="ottos_25991113";
+      $base="ottos_25991113_framework";
 
       parent::__construct($server,$user,$pass,$base);
       $this->query("SET NAMES 'utf8';");
